@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name:Repository name
+name:ark
 on:
   schedule:
     - cron: '0 */1 * * *'
@@ -20,7 +20,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Repository name
+      - name: ark
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
